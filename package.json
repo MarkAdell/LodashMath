@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MarkAdell/LodashMath.git"
+    "url": "git+https://github.com/MarkAdell/lodashmath.git"
   },
   "author": "Mark Adel <mark.adell@outlook.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MarkAdell/LodashMath/issues"
+    "url": "https://github.com/MarkAdell/lodashmath.git"
   },
-  "homepage": "https://github.com/MarkAdell/LodashMath#readme"
+  "homepage": "https://github.com/MarkAdell/lodashmath.git#readme"
 }
