@@ -1,5 +1,5 @@
 {
-  "name": "lodashmath",
+  "name": "mini-lodashmath",
   "version": "1.0.0",
   "description": "lodash math",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MarkAdell/lodashmath.git"
+    "url": "git+https://github.com/MarkAdell/mini-lodashmath.git"
   },
   "author": "Mark Adel <mark.adell@outlook.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MarkAdell/lodashmath/issues"
+    "url": "https://github.com/MarkAdell/mini-lodashmath/issues"
   },
-  "homepage": "https://github.com/MarkAdell/lodashmath#readme",
+  "homepage": "https://github.com/MarkAdell/mini-lodashmath#readme",
   "devDependencies": {
     "chai": "^4.1.2",
     "mocha": "^4.1.0"

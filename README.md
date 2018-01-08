@@ -2,7 +2,7 @@
 
 Using npm:
 ```shell
-$ npm i --save lodashmath
+$ npm i --save mini-lodashmath
 ```
 ## Available methods:
 
@@ -16,7 +16,7 @@ $ npm i --save lodashmath
 ## Examples:
 
 ```js
-const _ = require('lodashmath');
+const _ = require('mini-lodashmath');
 
 console.log(_.min([1, 2, 3])) // 1
 
