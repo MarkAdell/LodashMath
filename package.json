@@ -4,7 +4,7 @@
   "description": "lodash math",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/MarkAdell/lodashmath/issues"
   },
-  "homepage": "https://github.com/MarkAdell/lodashmath#readme"
+  "homepage": "https://github.com/MarkAdell/lodashmath#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.1.0"
+  }
 }
