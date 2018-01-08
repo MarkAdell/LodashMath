@@ -1,0 +1,19 @@
+{
+  "name": "lodashmath",
+  "version": "1.0.0",
+  "description": "lodash math",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarkAdell/LodashMath.git"
+  },
+  "author": "Mark Adel <mark.adell@outlook.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarkAdell/LodashMath/issues"
+  },
+  "homepage": "https://github.com/MarkAdell/LodashMath#readme"
+}
