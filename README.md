@@ -27,7 +27,11 @@ console.log(_.sum([1, 2, 3])); // 6
 console.log(_.ceil(2.5)); // 3
 
 console.log(_.floor(2.5)); // 2
- 
+
+console.log(_.random()); // default behavior of Math.random()
+
+console.log(_.random(5)); // random number between 0 and 5 inclusive
+
 console.log(_.random(1, 10)); // random number between 1 and 10 inclusive
 ```
 
