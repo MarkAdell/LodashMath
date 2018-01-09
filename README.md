@@ -1,10 +1,10 @@
 ## Installation
 
-Using npm:
+Using npm
 ```shell
 $ npm i --save mini-lodashmath
 ```
-## Available methods:
+## Available Methods
 
 - min
 - max
@@ -13,7 +13,7 @@ $ npm i --save mini-lodashmath
 - floor
 - random
 
-## Examples:
+## Usage
 
 ```js
 const _ = require('mini-lodashmath');
@@ -30,3 +30,6 @@ console.log(_.floor(2.5)); // 2
  
 console.log(_.random(1, 10)); // random number between 1 and 10 inclusive
 ```
+
+## License
+Code licensed under [MIT License](https://github.com/MarkAdell/mini-lodashmath/blob/master/LICENSE).
