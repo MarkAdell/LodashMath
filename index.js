@@ -1,4 +1,4 @@
-let min = array => {
+module.exports.min = array => {
     if (array && array.length) {
         let minEl = array[0]-0;
         for (let i = 0; i < array.length; i++) {
@@ -12,7 +12,7 @@ let min = array => {
     return undefined;
 }
 
-let max = array => {
+module.exports.max = array => {
     if (array && array.length) {
         let maxEl = array[0]-0;
         for (let i = 0; i < array.length; i++) {
@@ -26,7 +26,7 @@ let max = array => {
     return undefined;
 }
 
-let sum = array => {
+module.exports.sum = array => {
     if (array && array.length) {
         let sum = 0;
         for (let i = 0; i < array.length; i++) {
@@ -37,7 +37,7 @@ let sum = array => {
     return 0;
 }
 
-let ceil = number => {
+module.exports.ceil = number => {
     number = parseFloat(number);
     if (!isNaN(number) && typeof number === 'number') {
         if (number > 0) {
@@ -49,7 +49,7 @@ let ceil = number => {
     return undefined;
 }
 
-let floor = number => {
+module.exports.floor = number => {
     number = parseFloat(number);
     if (!isNaN(number) && typeof number === 'number') {
         if (number >= 0) {
@@ -61,21 +61,12 @@ let floor = number => {
     return undefined;
 }
 
-let random = (min, max) => {
+module.exports.random = (min, max) => {
     if (min > max) {
         let temp = min;
         min = max;
         max = temp;
     }
-    let random = floor(Math.random() * (max - min + 1) + min);
+    let random = this.floor(Math.random() * (max - min + 1) + min);
     return random;
-}
-
-module.exports = {
-    min,
-    max,
-    sum,
-    floor,
-    ceil,
-    random
 }
