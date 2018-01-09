@@ -84,16 +84,16 @@ describe('random function', () => {
     for (var i = 0; i < 10000; i++) {
         randomsNumbers.push(_.random(1, 10));
     }
-    let uniqueElements = [...new Set(randomsNumbers)];
+    randomsNumbers = [...new Set(randomsNumbers)];
+    let minRandom = _.min(randomsNumbers);
+    let maxRandom = _.max(randomsNumbers);
     it('should return a random number in a range', () => {
-        expect(uniqueElements.length).to.be.above(1);
+        expect(randomsNumbers.length).to.be.above(5);
     });
     it('should not generate a number below the lower bound', () => {
-        let minRandom = _.min(randomsNumbers);
         expect(minRandom).to.not.be.below(1);
     });
     it('should not generate a number above the upper bound', () => {
-        let maxRandom = _.max(randomsNumbers);
         expect(maxRandom).to.not.be.above(10);
     });
 });
