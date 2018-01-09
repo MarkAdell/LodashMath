@@ -1,34 +1,36 @@
 let min = array => {
-    if (array !== undefined && array.length) {
-        let minEl = array[0];
+    if (array && array.length) {
+        let minEl = array[0]-0;
         for (let i = 0; i < array.length; i++) {
-            if (array[i] < minEl) {
-                minEl = array[i];
+            let current = array[i]-0;
+            if (current < minEl) {
+                minEl = current;
             }
         }
         return minEl;
     }
-    return 0;
+    return undefined;
 }
 
 let max = array => {
-    if (array !== undefined && array.length) {
-        let maxEl = array[0];
+    if (array && array.length) {
+        let maxEl = array[0]-0;
         for (let i = 0; i < array.length; i++) {
-            if (array[i] > maxEl) {
-                maxEl = array[i];
+            let current = array[i] - 0;
+            if (current > maxEl) {
+                maxEl = current;
             }
         }
         return maxEl;
     }
-    return 0;
+    return undefined;
 }
 
 let sum = array => {
-    if (array !== undefined && array.length) {
+    if (array && array.length) {
         let sum = 0;
         for (let i = 0; i < array.length; i++) {
-            sum += array[i];
+            sum += array[i]-0;
         }
         return sum;
     }
@@ -36,19 +38,27 @@ let sum = array => {
 }
 
 let ceil = number => {
-    if (number > 0) {
-        return parseInt(number + 1);
-    } else {
-        return parseInt(number);
+    number = parseFloat(number);
+    if (!isNaN(number) && typeof number === 'number') {
+        if (number > 0) {
+            return parseInt(number + 1);
+        } else {
+            return parseInt(number);
+        }
     }
+    return undefined;
 }
 
 let floor = number => {
-    if (number >= 0) {
-        return parseInt(number);
-    } else {
-        return parseInt(number - 1);
+    number = parseFloat(number);
+    if (!isNaN(number) && typeof number === 'number') {
+        if (number >= 0) {
+            return parseInt(number);
+        } else {
+            return parseInt(number - 1);
+        }
     }
+    return undefined;
 }
 
 let random = (min, max) => {
