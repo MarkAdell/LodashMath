@@ -96,10 +96,11 @@ describe('random function', () => {
         }
     }
     describe('no patameters passed', () => {
-        let minRandom = getUniqRandGenNums(0).minRandom;
-        let maxRandom = getUniqRandGenNums(0).maxRandom;
-        let randomsNumbers = getUniqRandGenNums(0).randomsNumbers;
-        it('should return a random number in a range', () => {
+        let result = getUniqRandGenNums(0);
+        let minRandom = result.minRandom;
+        let maxRandom = result.maxRandom;
+        let randomsNumbers = result.randomsNumbers;
+        it('should generate different numbers', () => {
             expect(randomsNumbers.length).to.be.above(1);
         });
         it('should not generate a number below the lower bound', () => {
@@ -110,10 +111,11 @@ describe('random function', () => {
         });
     });
     describe('one patameter passed', () => {
-        let minRandom = getUniqRandGenNums(1).minRandom;
-        let maxRandom = getUniqRandGenNums(1).maxRandom;
-        let randomsNumbers = getUniqRandGenNums(1).randomsNumbers;
-        it('should return a random number in a range', () => {
+        let result = getUniqRandGenNums(1);
+        let minRandom = result.minRandom;
+        let maxRandom = result.maxRandom;
+        let randomsNumbers = result.randomsNumbers;
+        it('should generate different numbers', () => {
             expect(randomsNumbers.length).to.be.above(1);
         });
         it('should not generate a number below the lower bound', () => {
@@ -123,11 +125,12 @@ describe('random function', () => {
             expect(maxRandom).to.be.within(0, 5);
         });
     });
-    describe('two patameter passed', () => {
-        let minRandom = getUniqRandGenNums(2).minRandom;
-        let maxRandom = getUniqRandGenNums(2).maxRandom;
-        let randomsNumbers = getUniqRandGenNums(2).randomsNumbers;
-        it('should return a random number in a range', () => {
+    describe('two patameters passed', () => {
+        let result = getUniqRandGenNums(2);
+        let minRandom = result.minRandom;
+        let maxRandom = result.maxRandom;
+        let randomsNumbers = result.randomsNumbers;
+        it('should generate different numbers', () => {
             expect(randomsNumbers.length).to.be.above(1);
         });
         it('should not generate a number below the lower bound', () => {
