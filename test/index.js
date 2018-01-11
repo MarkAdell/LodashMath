@@ -83,14 +83,12 @@ describe('random function', () => {
     let getUniqRandGenNums = numOfPars => {
         let randomsNumbers = [];
         let params = [[], [5], [1, 10]][numOfPars];
-        for (var i = 0; i < 10000; i++) {
+        for (var i = 0; i < 1000; i++) {
             randomsNumbers.push(_.random(...params));
         }
-        randomsNumbers = [...new Set(randomsNumbers)];
         let minRandom = _.min(randomsNumbers);
         let maxRandom = _.max(randomsNumbers);
         return {
-            randomsNumbers,
             minRandom,
             maxRandom
         }
@@ -99,9 +97,8 @@ describe('random function', () => {
         let result = getUniqRandGenNums(0);
         let minRandom = result.minRandom;
         let maxRandom = result.maxRandom;
-        let randomsNumbers = result.randomsNumbers;
         it('should generate different numbers', () => {
-            expect(randomsNumbers.length).to.be.above(1);
+            expect(minRandom).to.be.lessThan(maxRandom);
         });
         it('should not generate a number below the lower bound', () => {
             expect(minRandom).to.be.within(0, 1);
@@ -114,9 +111,8 @@ describe('random function', () => {
         let result = getUniqRandGenNums(1);
         let minRandom = result.minRandom;
         let maxRandom = result.maxRandom;
-        let randomsNumbers = result.randomsNumbers;
         it('should generate different numbers', () => {
-            expect(randomsNumbers.length).to.be.above(1);
+            expect(minRandom).to.be.lessThan(maxRandom);
         });
         it('should not generate a number below the lower bound', () => {
             expect(minRandom).to.be.within(0, 5);
@@ -129,9 +125,8 @@ describe('random function', () => {
         let result = getUniqRandGenNums(2);
         let minRandom = result.minRandom;
         let maxRandom = result.maxRandom;
-        let randomsNumbers = result.randomsNumbers;
         it('should generate different numbers', () => {
-            expect(randomsNumbers.length).to.be.above(1);
+            expect(minRandom).to.be.lessThan(maxRandom);
         });
         it('should not generate a number below the lower bound', () => {
             expect(minRandom).to.be.within(1, 10);
