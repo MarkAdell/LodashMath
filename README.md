@@ -2,13 +2,14 @@
 
 Using npm
 ```shell
-$ npm i --save mini-lodashmath
+$ npm install mini-lodashmath --save
 ```
 ## Available Methods
 
 - min
 - max
 - sum
+- mean
 - ceil
 - floor
 - random
@@ -23,6 +24,8 @@ console.log(_.min([1, 2, 3])); // 1
 console.log(_.max([1, 2, 3])); // 3
 
 console.log(_.sum([1, 2, 3])); // 6
+
+console.log(_.mean([1, 2, 3])); // 2
 
 console.log(_.ceil(2.5)); // 3
 
