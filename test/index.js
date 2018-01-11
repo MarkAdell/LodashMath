@@ -136,3 +136,16 @@ describe('random function', () => {
         });
     });
 });
+
+describe('mean function', () => {
+    it('should return the mean of an array', () => {
+        expect(_.mean([1, 2])).to.be.equal(1.5);
+        expect(_.mean([1, 2, 3, 4, 5])).to.be.equal(3);
+    });
+    it('should return the undefined if the array is empty', () => {
+        expect(_.mean([])).to.be.equal(undefined);
+    });
+    it('should return the undefined if called with no parameters', () => {
+        expect(_.mean()).to.be.equal(undefined);
+    });
+});
