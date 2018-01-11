@@ -11,7 +11,7 @@
     "url": "git+https://github.com/MarkAdell/mini-lodashmath.git"
   },
   "author": "Mark Adel <mark.adell@outlook.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/MarkAdell/mini-lodashmath/issues"
   },
